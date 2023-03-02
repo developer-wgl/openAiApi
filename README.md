@@ -1,2 +1,3 @@
-# openAiApi
-openAI 调用chatGPT调用
+# OpenAI API Demo
+
+
