@@ -65,24 +65,12 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>OpenAI Quickstart</title>
+        <title>OpenAI API Test </title>
         <link rel="icon" href="/dog.png" />
       </Head>
 
       <main className={styles.main}>
         <img src="/dog.png" className={styles.icon} />
-        <h3>Name my pet</h3>
-        <form onSubmit={onSubmit}>
-          <input
-            type="text"
-            name="animal"
-            placeholder="Enter an animal"
-            value={animalInput}
-            onChange={(e) => setAnimalInput(e.target.value)}
-          />
-          <input type="submit" value="Generate names" />
-        </form>
-        <br/>
         <h3>Chat </h3>
         <form onSubmit={onChatSubmit}>
           <input
@@ -94,7 +82,23 @@ export default function Home() {
           />
           <input type="submit" value="Generate cahts" />
         </form>
+        <br/>
+        <h4>输入动物，返回动物的描述</h4>
+        <form onSubmit={onSubmit}>
+          <input
+            type="text"
+            name="animal"
+            placeholder="Enter an animal"
+            value={animalInput}
+            onChange={(e) => setAnimalInput(e.target.value)}
+          />
+          <input type="submit" value="Generate names" />
+        </form>
         <div className={styles.result}>{result}</div>
+        <br/>
+        <br/>
+        <br/>
+        <div>Github地址：<a href="https://github.com/developer-wgl/openAiApi/">https://github.com/developer-wgl/openAiApi</a></div>
       </main>
     </div>
   );
